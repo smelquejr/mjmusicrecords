@@ -1,58 +1,78 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MJ Music Records</title>
-  <style>
-    body {
-      margin: 0;
-      background-color: #000;
-      color: #fff;
-      font-family: 'Arial', sans-serif;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-      text-align: center;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MJ Music Records</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #0c0c0c;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
 
-    img {
-      max-width: 300px;
-      height: auto;
-      margin-bottom: 20px;
-    }
+        header {
+            padding: 30px 0;
+            background-color: #111;
+        }
 
-    h1 {
-      font-size: 28px;
-      margin: 0 20px 10px;
-    }
+        header img {
+            max-width: 200px;
+            height: auto;
+        }
 
-    p {
-      font-size: 18px;
-      margin: 5px 20px;
-    }
+        h1 {
+            margin-top: 20px;
+            font-size: 2.5em;
+        }
 
-    a {
-      color: #1db954;
-      font-weight: bold;
-      text-decoration: none;
-    }
+        p {
+            font-size: 1.2em;
+            margin-bottom: 40px;
+        }
 
-    a:hover {
-      text-decoration: underline;
-    }
-  </style>
+        .contact-button {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #e50914;
+            color: white;
+            text-decoration: none;
+            font-size: 1.2em;
+            border-radius: 8px;
+            transition: background-color 0.3s;
+        }
+
+        .contact-button:hover {
+            background-color: #bf0811;
+        }
+
+        footer {
+            margin-top: 50px;
+            padding: 20px;
+            font-size: 0.9em;
+            background-color: #111;
+            color: #aaa;
+        }
+    </style>
 </head>
 <body>
 
-  <img src="Mj-Music - sem fundo.png" alt="Logo MJ Music Records">
+    <header>
+        <img src="Mj-Music - sem fundo.png" alt="Logo MJ Music Records">
+    </header>
 
-  <h1>MJ Music Records</h1>
-  <p>🎵 Produção musical e audiovisual</p>
-  <p>Gravações, clipes, singles, EPs e muito mais...</p>
-  <p>Entre em contato: <a href="mailto:contato.mjmusicrecords@gmail.com">contato.mjmusicrecords@gmail.com</a></p>
+    <main>
+        <h1>Bem-vindo à MJ Music Records</h1>
+        <p>Produção musical, audiovisual, gravação de clipes, podcasts, singles, EPs e muito mais.</p>
+        <a href="mailto:contato.mjmusicrecords@gmail.com" class="contact-button">Fale conosco</a>
+    </main>
+
+    <footer>
+        &copy; 2025 MJ Music Records. Todos os direitos reservados.
+    </footer>
 
 </body>
 </html>
