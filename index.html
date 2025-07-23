@@ -1,78 +1,114 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MJ Music Records</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #0c0c0c;
-            color: #fff;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MJ Music Records</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
 
-        header {
-            padding: 30px 0;
-            background-color: #111;
-        }
+    body {
+      background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px 20px;
+      min-height: 100vh;
+    }
 
-        header img {
-            max-width: 200px;
-            height: auto;
-        }
+    .profile {
+      text-align: center;
+      margin-bottom: 30px;
+    }
 
-        h1 {
-            margin-top: 20px;
-            font-size: 2.5em;
-        }
+    .profile img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      border: 3px solid white;
+      margin-bottom: 10px;
+    }
 
-        p {
-            font-size: 1.2em;
-            margin-bottom: 40px;
-        }
+    .profile h1 {
+      font-size: 24px;
+      margin-bottom: 5px;
+    }
 
-        .contact-button {
-            display: inline-block;
-            padding: 15px 30px;
-            background-color: #e50914;
-            color: white;
-            text-decoration: none;
-            font-size: 1.2em;
-            border-radius: 8px;
-            transition: background-color 0.3s;
-        }
+    .profile p {
+      font-size: 14px;
+      color: #ccc;
+    }
 
-        .contact-button:hover {
-            background-color: #bf0811;
-        }
+    .links {
+      width: 100%;
+      max-width: 400px;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      margin-top: 20px;
+    }
 
-        footer {
-            margin-top: 50px;
-            padding: 20px;
-            font-size: 0.9em;
-            background-color: #111;
-            color: #aaa;
-        }
-    </style>
+    .link-button {
+      background: #1db954;
+      color: white;
+      text-align: center;
+      padding: 15px 20px;
+      border-radius: 12px;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: bold;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+      transition: all 0.3s ease;
+    }
+
+    .link-button:hover {
+      transform: scale(1.03);
+      background: #1ed760;
+    }
+
+    footer {
+      margin-top: 40px;
+      font-size: 12px;
+      color: #888;
+    }
+
+    @media (max-width: 480px) {
+      .link-button {
+        font-size: 14px;
+        padding: 13px 18px;
+      }
+
+      .profile h1 {
+        font-size: 20px;
+      }
+    }
+  </style>
 </head>
 <body>
 
-    <header>
-        <img src="Mj-Music - sem fundo.png" alt="Logo MJ Music Records">
-    </header>
+  <div class="profile">
+    <img src="https://i.imgur.com/Q4fLJ5V.png" alt="Logo MJ Music Records" />
+    <h1>MJ Music Records</h1>
+    <p>Produção musical, clipes, estúdio e muito mais 🎧</p>
+  </div>
 
-    <main>
-        <h1>Bem-vindo à MJ Music Records</h1>
-        <p>Produção musical, audiovisual, gravação de clipes, podcasts, singles, EPs e muito mais.</p>
-        <a href="mailto:contato.mjmusicrecords@gmail.com" class="contact-button">Fale conosco</a>
-    </main>
+  <div class="links">
+    <a href="https://www.youtube.com/@mjmusicrecords" class="link-button" target="_blank">📺 YouTube</a>
+    <a href="https://wa.me/5581992542459" class="link-button" target="_blank">📲 WhatsApp</a>
+    <a href="https://www.instagram.com/mjmusicrecords" class="link-button" target="_blank">📸 Instagram</a>
+    <a href="mailto:contato.mjmusicrecords@gmail.com" class="link-button">📧 E-mail</a>
+  </div>
 
-    <footer>
-        &copy; 2025 MJ Music Records. Todos os direitos reservados.
-    </footer>
+  <footer>
+    © 2025 MJ Music Records
+  </footer>
 
 </body>
 </html>
