@@ -5,11 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>MJ Music Records - Links</title>
 
-  <!-- Fonte Inter, usada no formula1.com -->
+  <!-- Fonte Inter -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
 
+  <!-- Ícones Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-xX2SKTts0jH9Yg3d3dvvRvB0UwlDZQDGyBipJ2ESLy0HpzGqtzHuozGqFUsS7wY0r8OQmjPjAAnRgEzDcmxhNQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
   <style>
-    /* Reset básico */
     * {
       box-sizing: border-box;
     }
@@ -33,7 +35,7 @@
       font-size: 2.5rem;
       letter-spacing: 0.05em;
       margin: 0;
-      color: #e10600; /* vermelho F1 */
+      color: #e10600;
       text-transform: uppercase;
     }
     header p {
@@ -52,7 +54,9 @@
     }
 
     a.button-link {
-      display: block;
+      display: flex;
+      align-items: center;
+      gap: 12px;
       padding: 1.2rem 1.5rem;
       background-color: #fff;
       color: #121212;
@@ -62,14 +66,17 @@
       border-radius: 6px;
       box-shadow: 0 4px 6px rgb(0 0 0 / 0.3);
       transition: background-color 0.3s ease, color 0.3s ease;
-      text-align: center;
-      user-select: none;
+      justify-content: center;
     }
+
+    a.button-link i {
+      font-size: 1.3rem;
+    }
+
     a.button-link:hover,
     a.button-link:focus {
       background-color: #e10600;
       color: #fff;
-      outline: none;
       box-shadow: 0 6px 8px rgb(225 6 0 / 0.8);
     }
 
@@ -100,11 +107,21 @@
   </header>
 
   <main>
-    <a href="https://www.youtube.com/@mjmusicrecords" target="_blank" rel="noopener" class="button-link">YouTube</a>
-    <a href="https://www.instagram.com/mjmusicrecords" target="_blank" rel="noopener" class="button-link">Instagram</a>
-    <a href="https://www.tiktok.com/@mjmusic.records" target="_blank" rel="noopener" class="button-link">TikTok</a>
-    <a href="mailto:contato.mjmusicrecords@gmail.com" class="button-link">E-mail</a>
-    <a href="https://wa.me/5581992542459" target="_blank" rel="noopener" class="button-link">WhatsApp</a>
+    <a href="https://www.youtube.com/@mjmusicrecords" target="_blank" rel="noopener" class="button-link">
+      <i class="fab fa-youtube"></i> YouTube
+    </a>
+    <a href="https://www.instagram.com/mjmusicrecords" target="_blank" rel="noopener" class="button-link">
+      <i class="fab fa-instagram"></i> Instagram
+    </a>
+    <a href="https://www.tiktok.com/@mjmusic.records" target="_blank" rel="noopener" class="button-link">
+      <i class="fab fa-tiktok"></i> TikTok
+    </a>
+    <a href="mailto:contato.mjmusicrecords@gmail.com" class="button-link">
+      <i class="fas fa-envelope"></i> E-mail
+    </a>
+    <a href="https://wa.me/5581992542459" target="_blank" rel="noopener" class="button-link">
+      <i class="fab fa-whatsapp"></i> WhatsApp
+    </a>
   </main>
 
   <footer>
