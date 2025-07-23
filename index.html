@@ -1,41 +1,110 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>MJ Music Records</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
   <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
     body {
-      background-color: #000;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
       color: #fff;
-      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    .container {
       text-align: center;
-      padding: 2rem;
+      max-width: 400px;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.4);
+      border-radius: 20px;
+      padding: 30px 20px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
     }
-    a {
+
+    .logo {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 20px;
+      border: 3px solid #fff;
+    }
+
+    h1 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    .link-button {
       display: block;
-      margin: 1rem auto;
-      padding: 1rem;
-      max-width: 300px;
-      background-color: #ff0000;
-      color: #fff;
+      width: 100%;
+      margin: 10px 0;
+      padding: 15px;
+      font-size: 16px;
+      font-weight: 600;
+      border: none;
+      border-radius: 30px;
+      background-color: #ffffff;
+      color: #2c5364;
       text-decoration: none;
-      border-radius: 10px;
-      font-weight: bold;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
     }
-    a:hover {
-      background-color: #cc0000;
+
+    .link-button:hover {
+      background-color: #00c6ff;
+      color: #fff;
+      transform: translateY(-3px);
+    }
+
+    .link-button i {
+      margin-right: 10px;
+    }
+
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 20px;
+      }
+
+      .link-button {
+        font-size: 14px;
+        padding: 12px;
+      }
     }
   </style>
 </head>
 <body>
-  <h1>MJ Music Records</h1>
-  <p>Produção musical e audiovisual</p>
+  <div class="container">
+    <img src="https://i.imgur.com/roWNBkw.png" alt="MJ Music Records" class="logo" />
+    <h1>MJ Music Records</h1>
 
-  <a href="https://wa.me/5581992542459">📲 WhatsApp</a>
-  <a href="https://youtube.com/@mjmusicrecords">▶️ YouTube</a>
-  <a href="https://instagram.com/mjmusicrecords">📸 Instagram</a>
-  <a href="https://tiktok.com/@mjmusicrecords">🎶 TikTok</a>
-  <a href="mailto:contato@mjmusic.com">📧 E-mail</a>
+    <a href="https://www.youtube.com/@mjmusicrecords" class="link-button" target="_blank">
+      <i class="fab fa-youtube"></i> YouTube
+    </a>
+    <a href="https://www.instagram.com/mjmusicrecords" class="link-button" target="_blank">
+      <i class="fab fa-instagram"></i> Instagram
+    </a>
+    <a href="https://wa.me/5581992542459" class="link-button" target="_blank">
+      <i class="fab fa-whatsapp"></i> WhatsApp
+    </a>
+    <a href="mailto:mjmusicrecords@gmail.com" class="link-button" target="_blank">
+      <i class="fas fa-envelope"></i> E-mail
+    </a>
+  </div>
 </body>
 </html>
